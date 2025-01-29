@@ -1,0 +1,208 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aqua;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.título{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.título span{
+    color: aquamarine;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px rgb(0, 174, 255);
+    transform: scale(1.25);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.5);
+}
+
+header nav ul{
+    list-style-type:none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section .topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .text-topo-site  h1 span{
+    color: aqua;
+}
+
+.topo-do-site .text-topo-site p{
+    color: antiquewhite;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: f 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes f{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 30px;
+    }                                                                                                                                                                                               
+}
+
+/* ESTILO DAS HABILIDADES */
+section .Habilidades{
+    padding: 40px 4%;
+}
+
+section .Habilidades .flex{
+    gap: 60px;
+}
+
+.Habilidades .Habilidades-box{
+    color: antiquewhite;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 167);
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.Habilidades .Habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(51, 51, 167);
+}
+
+.Habilidades .Habilidades-box h3{
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+section .sobre{
+    padding: 80px 4%;
+}
+
+section .sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: aquamarine;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+section .Portfólio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgb(51, 51, 167);
+}
+
+section .Portfólio .flex .img-port a{
+    align-items: center;
+}
+
+.img-port{
+    width: 360px;
+    height: 78px;
+    background-color: aquamarine;
+    border: 40px;
+}
